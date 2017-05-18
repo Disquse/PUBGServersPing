@@ -1,0 +1,536 @@
+<html>
+<head>
+	<title>PUBG Servers Ping</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<style>
+		html { 
+			background: url(background.jpg) no-repeat center center fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}	
+		td, tr {
+			padding: 5px;
+		}
+		#preloader {
+			position: fixed;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			background: #fff;
+			z-index: 100500;
+		}
+		#preloader .spinner {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin: -32px 0 0 -32px;
+		}
+	</style>
+	<script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter44581822 = new Ya.Metrika({ id:44581822, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/44581822" style="position:absolute; left:-9999px;" alt="" /></div></noscript>	
+</head>
+<body>
+<div id="preloader"><div class="spinner"><div class="preloader-wrapper big active"><div class="spinner-layer spinner-orange-only"><div class="circle-clipper left"><div class="circle"></div></div><div class="gap-patch"><div class="circle"></div></div><div class="circle-clipper right"><div class="circle"></div></div></div></div></div></div>
+
+<nav><div class="orange nav-wrapper"><a href="#" class="white-text brand-logo center">PUBG SERVERS PING</a></div></nav>
+<div class="container row">
+	<br><div class="col s12 m10 l8 offset-m1 offset-l2">
+        <div class="card-panel" style="padding: 18px;">
+			<center><b>Thanks guys! I really сould not know that this site will use so many people. I've made english version for you guys. This site was created for <a href="http://twitch.tv/beastqt">BeastQT</a>. He is awesome russian streamer!</b></center><br><div class="divider"></div>
+			<table id="grid" class="highlight striped">
+				<thead>
+					<tr>
+						<th data-type="string">Server:</th>
+						<th data-type="number">Latency (ms):</th>
+					</tr>
+				</thead>
+				<tbody>	
+					<tr>
+						<td>US-East (Virginia)</td>
+						<td class="latency" id="us-east-1" endpoint="http://dynamodb.us-east-1.amazonaws.com/">&nbsp;</td>
+					</tr>
+					<tr>
+						<td>US East (Ohio)</td>
+						<td class="latency" id="us-east-2" endpoint="http://dynamodb.us-east-2.amazonaws.com/">&nbsp;</td>
+					</tr>
+					<tr>
+						<td>US-West (California)</td>
+						<td class="latency" id="us-west-1" endpoint="http://dynamodb.us-west-1.amazonaws.com/">&nbsp;</td>
+					</tr>
+					<tr>
+						<td>US-West (Oregon)</td>
+						<td class="latency" id="us-west-2" endpoint="http://dynamodb.us-west-2.amazonaws.com/">&nbsp;</td>
+					</tr>
+					<tr>
+						<td>Canada (Central)</td>
+						<td class="latency" id="ca-central-1" endpoint="http://dynamodb.ca-central-1.amazonaws.com/">&nbsp;</td>
+					</tr>
+					<tr>
+						<td>Europe (Ireland)</td>
+						<td class="latency" id="eu-west-1" endpoint="http://dynamodb.eu-west-1.amazonaws.com/">&nbsp;</td>
+					</tr>
+					<tr>
+						<td>Europe (London)</td>
+						<td class="latency" id="eu-west-2" endpoint="http://dynamodb.eu-west-2.amazonaws.com/">&nbsp;</td>
+					</tr>
+					<tr>
+						<td>Europe (Frankfurt)</td>
+						<td class="latency" id="eu-central-1" endpoint="http://dynamodb.eu-central-1.amazonaws.com/">&nbsp;</td>
+					</tr>
+					<tr>
+						<td>Asia Pacific (Mumbai)</td>
+						<td class="latency" id="ap-south-1" endpoint="http://dynamodb.ap-south-1.amazonaws.com/">&nbsp;</td>
+					</tr>
+					<tr>
+						<td>Asia Pacific (Seoul)</td>
+						<td class="latency" id="ap-northeast-2" endpoint="http://dynamodb.ap-northeast-2.amazonaws.com/">&nbsp;</td>
+					</tr>
+					<tr>
+						<td>Asia Pacific (Singapore)</td>
+						<td class="latency" id="ap-southeast-1" endpoint="http://dynamodb.ap-southeast-1.amazonaws.com/">&nbsp;</td>
+					</tr>
+					<tr>
+						<td>Asia Pacific (Sydney)</td>
+						<td class="latency" id="ap-southeast-2" endpoint="http://dynamodb.ap-southeast-2.amazonaws.com/">&nbsp;</td>
+					</tr>
+					<tr>
+						<td>Asia Pacific (Tokyo)</td>
+						<td class="latency" id="ap-northeast-1" endpoint="http://dynamodb.ap-northeast-1.amazonaws.com/">&nbsp;</td>
+					</tr>
+					<tr>
+						<td>South America (Sao Paulo)</td>
+						<td class="latency" id="sa-east-1" endpoint="http://dynamodb.sa-east-1.amazonaws.com/">&nbsp;</td>
+					</tr>
+					<tr>
+						<td>China (Beijing)</td>
+						<td class="latency" id="cn-north-1" endpoint="http://dynamodb.cn-north-1.amazonaws.com.cn/">&nbsp;</td>
+					</tr>
+					<tr>
+						<td>AWS GovCloud (US)</td>
+						<td class="latency" id="us-gov-west-1" endpoint="http://dynamodb.us-gov-west-1.amazonaws.com/">&nbsp;</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="divider"></div><div id="imageCell"></div><br>
+			<center>
+				<a class="orange waves-effect waves-light btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Measure your ping" type="submit" id="pingbutton" onclick="Materialize.toast('Checking your ping!', 3500)">Ping</a>
+				<a class="orange waves-effect waves-light btn tooltipped" href="#modal1" data-position="bottom" data-delay="50" data-tooltip="Read F.A.Q.">Help</a>
+				<a class="orange waves-effect waves-light btn tooltipped" href="#modal2" data-position="bottom" data-delay="50" data-tooltip="List of all AWS servers">List</a>
+				<a class='dropdown-button orange waves-effect waves-light btn tooltipped' data-position="bottom" data-delay="50" data-tooltip="Change language" href='#' data-activates='dropdown1'>Language</a>
+			</center>
+			
+			<ul id='dropdown1' class='dropdown-content'>
+				<li><a href="/">English</a></li><li class="divider"></li>
+				<li><a href="/ru.html">Русский</a></li>
+			</ul>
+  
+			<div id="modal1" class="modal modal-fixed-footer">
+				<div class="modal-content">
+					<h4>HELP</h4><div class="divider"></div>
+					<p><b>Sorry for my english! Contact me if you know how to make this site better!</b></p>
+					<p><b>I have good ping, but I'm lagging</b> - Main problem of PUBG servers is not ping. Game servers just overloaded, that's why you lagging. You can try play on another servers. Big ping is much smaller problem that overloaded servers. Unfortunately, we can't check servers load...</p>
+					<p><b>Why?</b> - There is really hard to check your ping to PUBG servers. You can't check it directly from a game.</p>
+					<p><b>How this works?</b> - This site sends http request to all AWS servers that PUBG use. This is client-side, so latency should be correct.</p>
+					<p><b>Sorting?</b> - Press to column header to sort. Use it after ping test.</p>
+					<p><b>Who is this for?</b> - For PUBG players, Banda and rabotyag <i><3</i></p>
+					<p><b>How to contact you?</b> - You can check in on my main site: <a href="http://disquse.ru">disquse.ru</a></p>
+				</div>
+				<div class="modal-footer">
+					<a href="#!" class="modal-action modal-close waves-effect waves-orange btn-flat">Close</a>
+				</div>
+			</div>
+			<div id="modal2" class="modal modal-fixed-footer">
+				<div class="modal-content">
+					<h4>List of all AWS servers</h4><div class="divider"></div>
+					AWS (Amazon Web Services) - this company provides PUBG servers. Not all of them uses in a game, but there is full Server - IP list. Maybe this info can be useful for you:<br><br>
+					
+					<b>US EAST - North Virginia</b>   <br>
+					us-east-1	-	23.23.255.255	  <br>
+					us-east-1	-	34.192.0.54	      <br>
+					us-east-1	-	34.224.0.252	  <br>
+					us-east-1	-	50.17.255.254	  <br>
+					us-east-1	-	50.19.255.254	  <br>
+					us-east-1	-	52.1.255.254	  <br>
+					us-east-1	-	52.2.0.2	      <br>
+					us-east-1	-	52.7.255.255	  <br>
+					us-east-1	-	52.20.63.253	  <br>
+					us-east-1	-	52.45.127.254	  <br>
+					us-east-1	-	52.54.63.252	  <br>
+					us-east-1	-	52.70.63.252	  <br>
+					us-east-1	-	52.72.63.252	  <br>
+					us-east-1	-	52.86.63.252	  <br>
+					us-east-1	-	52.90.63.252	  <br>
+					us-east-1	-	52.200.255.254	  <br>
+					us-east-1	-	54.80.0.2	      <br>
+					us-east-1	-	54.84.0.3	      <br>
+					us-east-1	-	54.86.63.252	  <br>
+					us-east-1	-	54.88.0.3	      <br>
+					us-east-1	-	54.89.0.3	      <br>
+					us-east-1	-	54.90.0.3	      <br>
+					us-east-1	-	54.92.128.2	      <br>
+					us-east-1	-	54.144.0.2	      <br>
+					us-east-1	-	54.152.63.252	  <br>
+					us-east-1	-	54.156.0.0	      <br>
+					us-east-1	-	54.160.0.2	      <br>
+					us-east-1	-	54.164.63.252	  <br>
+					us-east-1	-	54.166.0.2	      <br>
+					us-east-1	-	54.172.63.252	  <br>
+					us-east-1	-	54.174.0.2	      <br>
+					us-east-1	-	54.196.0.1	      <br>
+					us-east-1	-	54.198.0.1	      <br>
+					us-east-1	-	54.205.255.255	  <br>
+					us-east-1	-	54.208.0.1	      <br>
+					us-east-1	-	54.210.63.252	  <br>
+					us-east-1	-	54.221.214.221	  <br>
+					us-east-1	-	54.225.110.215	  <br>
+					us-east-1	-	54.226.0.1	      <br>
+					us-east-1	-	54.235.236.60	  <br>
+					us-east-1	-	54.236.0.0	      <br>
+					us-east-1	-	54.240.8.0	      <br>
+					us-east-1	-	54.240.49.254	  <br>
+					us-east-1	-	54.243.255.254	  <br>
+					us-east-1	-	67.202.0.5	      <br>
+					us-east-1	-	72.44.32.8	      <br>
+					us-east-1	-	75.101.163.105	  <br>
+					us-east-1	-	107.22.255.255	  <br>
+					us-east-1	-	174.129.0.31	  <br>
+					us-east-1	-	184.72.92.4	      <br>
+					us-east-1	-	184.72.255.254	  <br>
+					us-east-1	-	184.73.173.231	  <br>
+					us-east-1	-	204.236.238.4	  <br>
+                                                      <br>
+					<b>US EAST - Ohio</b>             <br>
+					us-east-2	-	13.58.0.253	      <br>
+					us-east-2	-	52.14.64.0	      <br>
+					us-east-2	-	52.15.55.0        <br>
+                                                      <br>
+					<b>US WEST - North California</b> <br>
+					us-west-1	-	13.56.63.251	  <br>
+					us-west-1	-	50.18.56.1	      <br>
+					us-west-1	-	52.8.191.254	  <br>
+					us-west-1	-	52.9.63.252	      <br>
+					us-west-1	-	52.52.63.252	  <br>
+					us-west-1	-	54.67.63.253	  <br>
+					us-west-1	-	54.151.0.2	      <br>
+					us-west-1	-	54.153.63.252	  <br>
+					us-west-1	-	54.176.64.1	      <br>
+					us-west-1	-	54.183.64.3	      <br>
+					us-west-1	-	54.193.0.3	      <br>
+					us-west-1	-	54.215.0.1	      <br>
+					us-west-1	-	54.219.127.255	  <br>
+					us-west-1	-	54.241.127.255	  <br>
+					us-west-1	-	184.72.56.36	  <br>
+					us-west-1	-	184.169.255.254	  <br>
+					us-west-1	-	204.236.129.206	  <br>
+                                                      <br>
+					<b>US WEST - Oregon</b>           <br>
+					us-west-2	-	34.208.63.251	  <br>
+					us-west-2	-	35.160.63.253	  <br>
+					us-west-2	-	50.112.120.53	  <br>
+					us-west-2	-	52.10.63.252	  <br>
+					us-west-2	-	52.13.255.255	  <br>
+					us-west-2	-	52.24.63.252	  <br>
+					us-west-2	-	52.32.63.252	  <br>
+					us-west-2	-	52.36.0.2	      <br>
+					us-west-2	-	52.43.255.254	  <br>
+					us-west-2	-	52.88.0.2	      <br>
+					us-west-2	-	54.68.63.252	  <br>
+					us-west-2	-	54.70.0.12	      <br>
+					us-west-2	-	54.148.0.2	      <br>
+					us-west-2	-	54.184.0.3	      <br>
+					us-west-2	-	54.186.0.3	      <br>
+					us-west-2	-	54.188.0.0	      <br>
+					us-west-2	-	54.190.0.0	      <br>
+					us-west-2	-	54.191.63.252	  <br>
+					us-west-2	-	54.200.0.1	      <br>
+					us-west-2	-	54.202.0.1	      <br>
+					us-west-2	-	54.212.0.0	      <br>
+					us-west-2	-	54.214.0.1	      <br>
+					us-west-2	-	54.218.4.254	  <br>
+					us-west-2	-	54.240.24.0	      <br>
+					us-west-2	-	54.240.63.254	  <br>
+					us-west-2	-	54.244.128.1	  <br>
+					us-west-2	-	54.245.127.255	  <br>
+                                                      <br>
+					<b>US WEST - GovCloud</b>         <br>
+					us-gov-west-1 - 52.222.9.163      <br>
+                                                      <br>
+					<b>US WEST - Central</b>          <br>
+					ca-central-1 - 35.182.0.251	  <br>
+					ca-central-1 - 52.60.50.0	      <br>
+                                                      <br>
+					<b>EU - Ireland</b>               <br>
+					eu-west-1	-	34.248.60.213	  <br>
+					eu-west-1	-	46.51.178.50	  <br>
+					eu-west-1	-	46.137.120.1	  <br>
+					eu-west-1	-	46.137.191.254	  <br>
+					eu-west-1	-	52.16.0.2	      <br>
+					eu-west-1	-	52.19.0.2	      <br>
+					eu-west-1	-	52.30.63.252	  <br>
+					eu-west-1	-	52.48.63.252	  <br>
+					eu-west-1	-	52.215.255.254	  <br>
+					eu-west-1	-	54.72.255.252	  <br>
+					eu-west-1	-	54.73.0.1	      <br>
+					eu-west-1	-	54.74.0.1	      <br>
+					eu-west-1	-	54.76.0.3	      <br>
+					eu-west-1	-	54.78.0.3	      <br>
+					eu-west-1	-	54.154.63.252	  <br>
+					eu-west-1	-	54.155.0.1	      <br>
+					eu-west-1	-	54.170.248.3	  <br>
+					eu-west-1	-	54.171.63.252	  <br>
+					eu-west-1	-	54.194.255.254	  <br>
+					eu-west-1	-	54.216.0.1	      <br>
+					eu-west-1	-	54.220.0.0	      <br>
+					eu-west-1	-	54.228.250.251	  <br>
+					eu-west-1	-	54.229.0.1	      <br>
+					eu-west-1	-	54.240.0.0	      <br>
+					eu-west-1	-	54.240.56.254	  <br>
+					eu-west-1	-	54.246.127.255	  <br>
+					eu-west-1	-	54.247.127.254	  <br>
+					eu-west-1	-	79.125.120.9	  <br>
+					eu-west-1	-	176.34.127.254	  <br>
+					eu-west-1	-	176.34.255.255	  <br>
+					eu-west-1	-	185.48.120.66     <br>
+                                                      <br>
+					<b>EU - Frankfurt</b>             <br>
+					eu-central-1 - 35.156.63.252	  <br>
+					eu-central-1 - 52.28.63.252	  <br>
+					eu-central-1 - 52.29.63.252	  <br>
+					eu-central-1 - 52.57.255.254	  <br>
+					eu-central-1 - 52.58.63.252	  <br>
+					eu-central-1 - 54.93.32.2	      <br>
+					eu-central-1 - 54.93.162.162	  <br>
+                                                      <br>
+					<b>EU - London</b>                <br>
+					eu-west-2	-	35.176.0.252	  <br>
+					eu-west-2	-	52.56.34.0        <br>
+                                                      <br>
+					<b>ASIA PACIFIC - Tokyo</b>       <br>
+					ap-northeast-1	- 13.112.63.251	  <br>
+					ap-northeast-1	- 46.51.255.254	  <br>
+					ap-northeast-1	- 52.68.63.252	  <br>
+					ap-northeast-1	- 52.192.63.252	  <br>
+					ap-northeast-1	- 52.196.63.252	  <br>
+					ap-northeast-1	- 54.64.0.2	      <br>
+					ap-northeast-1	- 54.92.0.2	      <br>
+					ap-northeast-1	- 54.95.0.2	      <br>
+					ap-northeast-1	- 54.150.0.255	  <br>
+					ap-northeast-1	- 54.168.0.2	      <br>
+					ap-northeast-1	- 54.178.0.2	      <br>
+					ap-northeast-1	- 54.199.127.255	  <br>
+					ap-northeast-1	- 54.238.0.0	      <br>
+					ap-northeast-1	- 54.248.127.254	  <br>
+					ap-northeast-1	- 54.250.128.0	  <br>
+					ap-northeast-1	- 103.4.10.139	  <br>
+					ap-northeast-1	- 175.41.248.202	  <br>
+					ap-northeast-1	- 176.32.95.254	  <br>
+					ap-northeast-1	- 176.34.56.254	  <br>
+                                                      <br>
+					<b>ASIA PACIFIC - Seoul</b>       <br>
+					ap-northeast-2	- 13.124.63.251	  <br>
+					ap-northeast-2	- 52.78.63.252	  <br>
+					ap-northeast-2	- 52.79.52.64	      <br>
+                                                      <br>
+					<b>ASIA PACIFIC - Singapore</b>   <br>
+					ap-southeast-1	- 13.228.0.251	  <br>
+					ap-southeast-1	- 46.51.216.14	  <br>
+					ap-southeast-1	- 46.137.255.254	  <br>
+					ap-southeast-1	- 52.74.0.2	      <br>
+					ap-southeast-1	- 52.76.0.2	      <br>
+					ap-southeast-1	- 52.76.191.252	  <br>
+					ap-southeast-1	- 52.77.63.252	  <br>
+					ap-southeast-1	- 52.221.255.252	  <br>
+					ap-southeast-1	- 54.151.128.2	  <br>
+					ap-southeast-1	- 54.169.0.2	      <br>
+					ap-southeast-1	- 54.169.191.253	  <br>
+					ap-southeast-1	- 54.179.0.2	      <br>
+					ap-southeast-1	- 54.179.191.252	  <br>
+					ap-southeast-1	- 54.251.63.255	  <br>
+					ap-southeast-1	- 54.254.128.1	  <br>
+					ap-southeast-1	- 54.255.0.2	      <br>
+					ap-southeast-1	- 122.248.255.254	  <br>
+					ap-southeast-1	- 175.41.146.190	  <br>
+                                                      <br>
+					<b>ASIA PACIFIC - Sydney</b>      <br>
+					ap-southeast-2	- 13.54.63.252	  <br>
+					ap-southeast-2	- 52.62.63.252	  <br>
+					ap-southeast-2	- 52.64.63.253	  <br>
+					ap-southeast-2	- 52.64.191.252	  <br>
+					ap-southeast-2	- 52.65.63.252	  <br>
+					ap-southeast-2	- 54.66.0.2	      <br>
+					ap-southeast-2	- 54.66.191.252	  <br>
+					ap-southeast-2	- 54.79.127.252	  <br>
+					ap-southeast-2	- 54.153.191.252  <br>
+					ap-southeast-2	- 54.206.127.254  <br>
+					ap-southeast-2	- 54.206.128.2	  <br>
+					ap-southeast-2	- 54.252.88.8	  <br>
+					ap-southeast-2	- 54.253.0.1	  <br>
+                                                      <br>
+					<b>ASIA PACIFIC - Mumbai</b>      <br>
+					ap-south-1 - 13.126.0.252	  <br>
+					ap-south-1 - 35.154.63.252	  <br>
+					ap-south-1 - 52.66.66.2	      <br>
+                                                      <br>
+					<b>SOUTH AMERICA - São Paulo</b>  <br>
+					sa-east-1	-	52.67.255.254	  <br>
+					sa-east-1	-	54.94.0.66	      <br>
+					sa-east-1	-	54.94.191.252	  <br>
+					sa-east-1	-	54.207.127.254	  <br>
+					sa-east-1	-	54.232.127.254	  <br>
+					sa-east-1	-	54.233.127.252	  <br>
+					sa-east-1	-	54.233.192.0	  <br>
+					sa-east-1	-	54.240.16.0	      <br>
+					sa-east-1	-	177.71.255.255	  <br>
+				</div>
+				<div class="modal-footer">
+					<a href="#!" class="modal-action modal-close waves-effect waves-orange btn-flat">Close</a>
+				</div>
+			</div>
+			
+			<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+			<script type="text/javascript">
+				var pingButton = $("#pingbutton");
+
+				function disablePingButton() {
+					pingButton.attr("disabled", "disabled");
+				};
+
+				function enablePingButton() {
+					pingButton.removeAttr("disabled");
+					Materialize.toast('Completed!', 2000);
+					
+					var grid = document.getElementById('grid');
+					grid.onclick = function(e) {
+						if (e.target.tagName != 'TH') return;
+						sortGrid(e.target.cellIndex, e.target.getAttribute('data-type'));
+					};
+					
+					function sortGrid(colNum, type) {
+						var tbody = grid.getElementsByTagName('tbody')[0];
+						var rowsArray = [].slice.call(tbody.rows);
+						var compare;
+						switch (type) {
+							case 'number':
+								compare = function(rowA, rowB) {
+								return rowA.cells[colNum].innerHTML - rowB.cells[colNum].innerHTML;
+							};
+							break;
+							case 'string':
+								compare = function(rowA, rowB) {
+								return rowA.cells[colNum].innerHTML > rowB.cells[colNum].innerHTML ? 1 : -1;
+							};
+							break;
+						}
+						rowsArray.sort(compare);
+						grid.removeChild(tbody);
+						for (var i = 0; i < rowsArray.length; i++) {
+							tbody.appendChild(rowsArray[i]);
+						}
+						grid.appendChild(tbody);
+					}
+				};
+
+				function getURLParameter(name) {
+					var regex = new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)');
+					var matches = regex.exec(location.search);
+					if (matches == null) {
+						return null;
+					}
+					var value = matches[1];
+					var value = value.replace(/\+/g, '%20');
+					return decodeURIComponent(value);
+				}
+
+				$(document).ready(function() {
+					$("#pingbutton").click(pingButtonClicked);
+					if (getURLParameter("run")) {
+						$("#pingbutton").click();
+					}
+				});
+
+				function pingButtonClicked() {
+					disablePingButton();
+					var latencyBoxes = $(".latency").toArray();
+					latencyBoxes.reverse();
+					  doNextBox(latencyBoxes);
+				}
+
+				function doNextBox(latencyBoxes) {
+					var box = latencyBoxes.pop();
+					if (box) {
+						var region = box.id;
+						var endpoint = box.getAttribute("endpoint");
+						step1_connect(box, region, endpoint, latencyBoxes);
+					} else {
+						enablePingButton();
+					}
+				}
+
+				var imageCell = $("#imageCell")
+				function ping_endpoint(endpoint, onComplete) {
+					var randomString = Math.floor(Math.random()*0xFFFFFFFFFFFFFFFF).toString(36);
+					var targetUrl = endpoint + "ping?x=" + randomString;
+					imageCell.empty();
+					imageCell.html("<img id='pingImage' style='display: none'>");
+					var pingImage = $("#pingImage");
+					pingImage.error(onComplete);
+					pingImage.attr("src", targetUrl);
+				}
+
+				function step1_connect(box, region, endpoint, latencyBoxes) {
+					$(box).html("Connecting");
+					ping_endpoint(endpoint, function() { step2_ping(box, region, endpoint, latencyBoxes); });
+				}
+
+				function currentTimeMillis() {
+					return (new Date()).getTime();
+				}
+
+				function step2_ping(box, region, endpoint, latencyBoxes) {
+					$(box).html("Checking");
+					var startTime = currentTimeMillis();
+					ping_endpoint(endpoint, function() { step3_finish(startTime, box, region, endpoint, latencyBoxes); });
+				}
+
+				function step3_finish(startTime, box, region, endpoint, latencyBoxes) {
+					var endTime = currentTimeMillis();
+					var elapsed = endTime - startTime;
+					var resultText = elapsed.toString();
+					$(box).html(resultText);
+					doNextBox(latencyBoxes);
+				}
+				
+				$(window).on('load', function () {
+					var $preloader = $('#preloader'),
+					$spinner = $preloader.find('.spinner');
+					$spinner.delay(700).fadeOut('slow');
+					$preloader.delay(1000).fadeOut('slow');
+				});
+
+				$(document).ready(function() {	
+					$('.modal').modal();
+					
+					$("body").css("display", "none");
+					$("body").fadeIn(500);
+
+					$("a.transition").click(function(event){
+						event.preventDefault();
+						linkLocation = this.href;
+						$("body").fadeOut(500, redirectPage);
+					});
+
+					function redirectPage() {
+						window.location = linkLocation;
+					}
+				});
+			</script>
+		</div>
+	</div>
+</div>
+</body>
+</html>

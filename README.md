@@ -1,0 +1,2 @@
+**PLAYERUNKNOWN'S BATTLEGROUNDS SERVERS PING**
+http://pubg.disquse.ru
