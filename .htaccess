@@ -1,0 +1,11 @@
+RewriteEngine on
+RewriteBase /
+Options All -Indexes
+RewriteCond %{REQUEST_FILENAME} -s [OR]
+RewriteCond %{REQUEST_FILENAME} -l [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^css/(.*)$ css/$1 [L]
+RewriteRule ^images/(.*)$ images/$1 [L]
+RewriteRule ^pages/(.*)$ pages/$1 [L]
+RewriteRule ^.*$ [NC,L]
+RewriteRule ^.*$ index.php [NC,L]
