@@ -83,6 +83,19 @@ function head() {
 			.version:hover {
 				opacity: 1.0; 
 			}
+			.actionbutton {
+				width: 90px;
+				height: 24px;
+				line-height: 24px;
+				padding: 0 1rem;
+				font-size: 12px;
+			}
+			.topbutton {
+				height: 28px;
+				line-height: 28px;
+				padding: 0 1.5rem;
+				font-size: 14px;
+			}
 		</style>
 		<script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter44581822 = new Ya.Metrika2({ id:44581822, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/tag.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks2"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/44581822" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 	</head>
