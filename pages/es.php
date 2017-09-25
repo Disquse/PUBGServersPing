@@ -137,20 +137,20 @@
 			<div class="divider"></div><div id="imageCell"></div><br>
 			<center>
 				<a class="orange waves-effect waves-light btn tooltipped" data-position="top" data-delay="50" data-tooltip="mide tu ping o latencia" type="submit" id="pingbutton" onclick="Materialize.toast('Checking your ping!', 3500)">Ping</a>
-				<a class="orange waves-effect waves-light btn tooltipped" href="#modal1" data-position="top" data-delay="50" data-tooltip="Lee F.A.Q.">Ayuda</a>
-				<a class="orange waves-effect waves-light btn tooltipped" href="#modal2" data-position="top" data-delay="50" data-tooltip="Lista de todos los servidores de AWS">Lista</a>
-				<a class='dropdown-button orange waves-effect waves-light btn tooltipped' data-position="top" data-delay="50" data-tooltip="Cambiar idioma" href='#' data-activates='dropdown1'>Language</a>
+				<a class="orange waves-effect waves-light btn tooltipped" href="#modalinfo" data-position="top" data-delay="50" data-tooltip="Lee F.A.Q.">Ayuda</a>
+				<a class="orange waves-effect waves-light btn tooltipped" href="#modalservers" data-position="top" data-delay="50" data-tooltip="Lista de todos los servidores de AWS">Lista</a>
+				<a class='dropdown-button orange waves-effect waves-light btn tooltipped' data-position="top" data-delay="50" data-tooltip="Cambiar idioma" href='#' data-activates='langdropdown'>Language</a>
 			</center>
 			
-			<ul id='dropdown1' class='dropdown-content'>
+			<ul id='langdropdown' class='dropdown-content'>
 				<li><a href="/en">English</a></li>
 				<li class="divider"></li>
 				<li><a href="/ru">Русский</a></li>
 				<li class="divider"></li>
-				<li><a href="/es">Spanish</a></li>
+				<li><a href="/es">Español</a></li>
 			</ul>
   
-			<div id="modal1" class="modal modal-fixed-footer">
+			<div id="modalinfo" class="modal modal-fixed-footer">
 				<div class="modal-content">
 					<h4>Ayuda</h4><div class="divider"></div>
 					<br>
@@ -169,12 +169,13 @@
 					<p><b>Clasificacion?</b> - Presiona el encabezado de la columna para la clasificacion. Usalo despues de hacer tu prueba de ping.</p>
 					<p><b>Para quien es esto?</b> - Para los jugadores de PUBG, Banda y rabotyag <i><3</i></p>
 					<p><b>Como te contacto?</b> - Puedes chequear en mi sitio principal: <a href="http://disquse.ru">disquse.ru</a></p>
+					<p><b>Thanks to:</b><br><a href="https://github.com/nino6454">nino6454</a> for Spanish translation</p>
 				</div>
 				<div class="modal-footer">
 					<a class="modal-action modal-close waves-effect waves-orange btn-flat">Close</a>
 				</div>
 			</div>
-			<div id="modal2" class="modal modal-fixed-footer">
+			<div id="modalservers" class="modal modal-fixed-footer">
 				<div class="modal-content">
 					<h4>List de todos los servidores AWS</h4><div class="divider"></div>
 					AWS (Amazon Web Services) - Esta empresa provee los servidores para PUGB. No todos se usan para el juego, pero hay un servidor lleno - Lista de IPS. Tal vez esta informacion sea util para ti:<br><br>
@@ -328,32 +329,32 @@
 	function selectAmerica() {
 		unselectAll();
 		let boxes = $(".latency").toArray();
-		document.getElementById('ch_'+boxes[0].id).checked = true;
-		document.getElementById('ch_'+boxes[1].id).checked = true;
-		document.getElementById('ch_'+boxes[2].id).checked = true;
-		document.getElementById('ch_'+boxes[3].id).checked = true;
-		document.getElementById('ch_'+boxes[4].id).checked = true;
-		document.getElementById('ch_'+boxes[13].id).checked = true;
+		document.getElementById('ch_us-east-1').checked = true;
+		document.getElementById('ch_us-east-2').checked = true;
+		document.getElementById('ch_us-west-1').checked = true;
+		document.getElementById('ch_us-west-2').checked = true;
+		document.getElementById('ch_ca-central-1').checked = true;
+		document.getElementById('ch_sa-east-1').checked = true;
 	}
 	
 	function selectEurope() {
 		unselectAll();
 		let boxes = $(".latency").toArray();
-		document.getElementById('ch_'+boxes[5].id).checked = true;
-		document.getElementById('ch_'+boxes[6].id).checked = true;
-		document.getElementById('ch_'+boxes[7].id).checked = true;
+		document.getElementById('ch_eu-west-1').checked = true;
+		document.getElementById('ch_eu-west-2').checked = true;
+		document.getElementById('ch_eu-central-1').checked = true;
 	}
 	
 	function selectAsia() {
 		unselectAll();
 		let boxes = $(".latency").toArray();
-		document.getElementById('ch_'+boxes[8].id).checked = true;
-		document.getElementById('ch_'+boxes[9].id).checked = true;
-		document.getElementById('ch_'+boxes[10].id).checked = true;
-		document.getElementById('ch_'+boxes[11].id).checked = true;
-		document.getElementById('ch_'+boxes[12].id).checked = true;
-		document.getElementById('ch_'+boxes[14].id).checked = true;
-	}	
+		document.getElementById('ch_ap-south-1').checked = true;
+		document.getElementById('ch_ap-northeast-2').checked = true;
+		document.getElementById('ch_ap-southeast-1').checked = true;
+		document.getElementById('ch_ap-southeast-2').checked = true;
+		document.getElementById('ch_ap-northeast-1').checked = true;
+		document.getElementById('ch_cn-north-1').checked = true;
+	}
 	
 	function doNextBox(latencyBoxes) {
 		var box = latencyBoxes.pop();

@@ -3,7 +3,8 @@
 <div class="container row">
 	<br><div class="col s12 m10 l10 offset-m1 offset-l1">
         <div class="card-panel" style="padding: 18px;">
-			<center><b>Этот сайт был сделан для <a href="http://twitch.tv/beastqt">BeastQT</a>. Он замечательный русский стример!</b></center><br><div style="margin-bottom: 10px" class="divider"></div>
+			<center><b>Этот сайт был сделан для <a href="http://twitch.tv/beastqt">BeastQT</a>. Он замечательный русский стример!</b></center><br>
+			<div style="margin-bottom: 10px" class="divider"></div>
 			<center>
 				<a style="background-color: rgba(0,0,0,0.05)" onclick="selectAll()" class="topbutton waves-effect waves-orange btn-flat">Выделить все</a>
 				<a style="background-color: rgba(0,0,0,0.05)" onclick="unselectAll()" class="topbutton waves-effect waves-orange btn-flat">Отменить все</a>
@@ -137,18 +138,20 @@
 			<div class="divider"></div><div id="imageCell"></div><br>
 			<center>
 				<a class="orange waves-effect waves-light btn tooltipped" data-position="top" data-delay="50" data-tooltip="Замерить задержку до серверов" type="submit" id="pingbutton" onclick="Materialize.toast('Проверяем задержку!', 3500)">Пинговать</a>
-				<a class="orange waves-effect waves-light btn tooltipped" href="#modal1" data-position="top" data-delay="50" data-tooltip="Прочитать справку">Помощь</a>
-				<a class="orange waves-effect waves-light btn tooltipped" href="#modal2" data-position="top" data-delay="50" data-tooltip="Всех серверов AWS">Список</a>
-				<a class='dropdown-button orange waves-effect waves-light btn tooltipped' data-position="top" data-delay="50" data-tooltip="Изменить язык сайта" href='#' data-activates='dropdown1'>Язык</a>
+				<a class="orange waves-effect waves-light btn tooltipped" href="#modalinfo" data-position="top" data-delay="50" data-tooltip="Прочитать справку">Помощь</a>
+				<a class="orange waves-effect waves-light btn tooltipped" href="#modalservers" data-position="top" data-delay="50" data-tooltip="Всех серверов AWS">Список</a>
+				<a class='dropdown-button orange waves-effect waves-light btn tooltipped' data-position="top" data-delay="50" data-tooltip="Изменить язык сайта" href='#' data-activates='langdropdown'>Язык</a>
 			</center>
 			
-			<ul id='dropdown1' class='dropdown-content'>
+			<ul id='langdropdown' class='dropdown-content'>
 				<li><a href="/en">English</a></li>
 				<li class="divider"></li>
 				<li><a href="/ru">Русский</a></li>
+				<li class="divider"></li>
+				<li><a href="/es">Español</a></li>
 			</ul>
 			
-			<div id="modal1" class="modal modal-fixed-footer">
+			<div id="modalinfo" class="modal modal-fixed-footer">
 				<div class="modal-content">
 					<h4>Помощь</h4><div class="divider"></div>
 					<br>
@@ -168,12 +171,13 @@
 					<p><b>Результаты всегда разные, это нормально?</b> - Пинг постоянно меняется и это норма. Замерьте 10 раз и выпишите минимальный и максимальный результат. Это и будет примерный диапазон возможной задержки. То есть в нормальных условиях пинг всегда будет плюс-минус таким.</p>
 					<p><b>Для кого это?</b> - Для игроков этой игры, Банды и работяг <i><3</i></p>
 					<p><b>Как связаться с автором?</b> - Все нужные ссылки вы можете найти на основном сайте: <a href="http://disquse.ru">disquse.ru</a></p>
+					<p><b>Thanks to:</b><br><a href="https://github.com/nino6454">nino6454</a> for Spanish translation</p>
 				</div>
 				<div class="modal-footer">
 					<a class="modal-action modal-close waves-effect waves-orange btn-flat">Закрыть</a>
 				</div>
 			</div>
-			<div id="modal2" class="modal modal-fixed-footer">
+			<div id="modalservers" class="modal modal-fixed-footer">
 				<div class="modal-content">
 					<h4>Список всех серверов AWS</h4><div class="divider"></div>
 					AWS (Amazon Web Services) - это компания, поставляющая PUBG (и многим другим) свои сервера. Это просто общий список для ознакомления. Далеко не все из них используются в самой игре и многие из них находятся на одном сервере (что значит что задержка будет идентична):<br><br>
@@ -334,31 +338,31 @@
 	function selectAmerica() {
 		unselectAll();
 		let boxes = $(".latency").toArray();
-		document.getElementById('ch_'+boxes[0].id).checked = true;
-		document.getElementById('ch_'+boxes[1].id).checked = true;
-		document.getElementById('ch_'+boxes[2].id).checked = true;
-		document.getElementById('ch_'+boxes[3].id).checked = true;
-		document.getElementById('ch_'+boxes[4].id).checked = true;
-		document.getElementById('ch_'+boxes[13].id).checked = true;
+		document.getElementById('ch_us-east-1').checked = true;
+		document.getElementById('ch_us-east-2').checked = true;
+		document.getElementById('ch_us-west-1').checked = true;
+		document.getElementById('ch_us-west-2').checked = true;
+		document.getElementById('ch_ca-central-1').checked = true;
+		document.getElementById('ch_sa-east-1').checked = true;
 	}
 	
 	function selectEurope() {
 		unselectAll();
 		let boxes = $(".latency").toArray();
-		document.getElementById('ch_'+boxes[5].id).checked = true;
-		document.getElementById('ch_'+boxes[6].id).checked = true;
-		document.getElementById('ch_'+boxes[7].id).checked = true;
+		document.getElementById('ch_eu-west-1').checked = true;
+		document.getElementById('ch_eu-west-2').checked = true;
+		document.getElementById('ch_eu-central-1').checked = true;
 	}
 	
 	function selectAsia() {
 		unselectAll();
 		let boxes = $(".latency").toArray();
-		document.getElementById('ch_'+boxes[8].id).checked = true;
-		document.getElementById('ch_'+boxes[9].id).checked = true;
-		document.getElementById('ch_'+boxes[10].id).checked = true;
-		document.getElementById('ch_'+boxes[11].id).checked = true;
-		document.getElementById('ch_'+boxes[12].id).checked = true;
-		document.getElementById('ch_'+boxes[14].id).checked = true;
+		document.getElementById('ch_ap-south-1').checked = true;
+		document.getElementById('ch_ap-northeast-2').checked = true;
+		document.getElementById('ch_ap-southeast-1').checked = true;
+		document.getElementById('ch_ap-southeast-2').checked = true;
+		document.getElementById('ch_ap-northeast-1').checked = true;
+		document.getElementById('ch_cn-north-1').checked = true;
 	}	
 	
 	function doNextBox(latencyBoxes) {
