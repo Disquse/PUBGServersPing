@@ -136,7 +136,7 @@
 			</table>
 			<div class="divider"></div><div id="imageCell"></div><br>
 			<center>
-				<a class="orange waves-effect waves-light btn tooltipped" data-position="top" data-delay="50" data-tooltip="Mesure t'on ping" type="submit" id="pingbutton" onclick="Materialize.toast('Checking your ping!', 3500)">Ping</a>
+				<a class="orange waves-effect waves-light btn tooltipped pulse" data-position="top" data-delay="50" data-tooltip="Mesure t'on ping" type="submit" id="pingbutton" onclick="Materialize.toast('Checking your ping!', 3500)">Ping</a>
 				<a class="orange waves-effect waves-light btn tooltipped" href="#modalinfo" data-position="top" data-delay="50" data-tooltip="Lire la F.A.Q.">FAQ</a>
 				<a class="orange waves-effect waves-light btn tooltipped" href="#modalservers" data-position="top" data-delay="50" data-tooltip="Liste de tous les serveurs AWS">Liste</a>
 				<a class='dropdown-button orange waves-effect waves-light btn tooltipped' data-position="top" data-delay="50" data-tooltip="Changer la langue" href='#' data-activates='langdropdown'>Language</a>
@@ -170,7 +170,8 @@
 					<p><b>Trier ?</b> - Appuyez sur l'en-tête de colonne pour trier. Utilisez-le après le test ping.</p>
 					<p><b>Pour qui est ce site ?</b> - Pour les joueurs de PUBG, Banda et Rabotyag <i><3</i></p>
 					<p><b>Comment me contacter</b> - Vous pouvez vous enregistrer sur mon site principal: <a href="http://disquse.ru">disquse.ru</a></p>
-					<p><b>Merci a :</b><br><a href="https://github.com/nino6454">nino6454</a> pour la traduction Espagnol</p>
+					<p><b>Thanks to:</b><br><a href="https://github.com/nino6454">nino6454</a> for Spanish translation</p>
+					<p><a href="https://github.com/Cethiel">Cethiel</a> for French translation</p>
 				</div>
 				<div class="modal-footer">
 					<a class="modal-action modal-close waves-effect waves-orange btn-flat">Fermer</a>
