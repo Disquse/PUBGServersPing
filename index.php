@@ -33,9 +33,10 @@ if  ( $page == 'index' ) {
 if ($page == 'sendfeedback') { include('pages/sendfeedback.php'); }
 if ($page == 'loadfeedbacks') { include('pages/loadfeedbacks.php'); }
 elseif ($language == 'en') { include('pages/en.php'); }
+elseif ($language == 'vi') { include('pages/vi.php'); }
 elseif ($language == 'ru') { include('pages/ru.php'); }
 elseif ($language == 'es') { include('pages/es.php'); }
-elseif ($page == 'index') { include('pages/en.php'); }
+elseif ($page == 'index') { include('pages/vi.php'); }
 else { include('pages/error.php'); }
 
 
