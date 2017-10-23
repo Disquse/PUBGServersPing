@@ -1,6 +1,6 @@
 <?php
 if ( $_SERVER['REQUEST_URI'] == '/' ) {
-	$page = 'index';
+	$page = 'vi';
 	$module = 'index';
 } else {
 	$URLPath = parse_url( $_SERVER['REQUEST_URI'], PHP_URL_PATH );
