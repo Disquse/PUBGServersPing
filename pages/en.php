@@ -144,14 +144,14 @@
 			
 			<ul id='langdropdown' class='dropdown-content'>
 				<li><a href="/en">English</a></li>
-				<li class="divider"></li>
-                <li><a href="/vi">Vietnamese</a></li>
                 <li class="divider"></li>
 				<li><a href="/ru">Русский</a></li>
 				<li class="divider"></li>
 				<li><a href="/es">Español</a></li>
 				<li class="divider"></li>
 				<li><a href="/fr">Français</a></li>
+                <li class="divider"></li>
+                <li><a href="/vi">Vietnamese</a></li>
 			</ul>
   
 			<div id="modalinfo" class="modal modal-fixed-footer">

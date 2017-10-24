@@ -1,6 +1,6 @@
 <?php
 if ( $_SERVER['REQUEST_URI'] == '/' ) {
-	$page = 'vi';
+	$page = 'index';
 	$module = 'index';
 } else {
 	$URLPath = parse_url( $_SERVER['REQUEST_URI'], PHP_URL_PATH );
@@ -33,10 +33,10 @@ if  ( $page == 'index' ) {
 if ($page == 'sendfeedback') { include('pages/sendfeedback.php'); }
 if ($page == 'loadfeedbacks') { include('pages/loadfeedbacks.php'); }
 elseif ($language == 'en') { include('pages/en.php'); }
-elseif ($language == 'vi') { include('pages/vi.php'); }
 elseif ($language == 'ru') { include('pages/ru.php'); }
 elseif ($language == 'es') { include('pages/es.php'); }
 elseif ($language == 'fr') { include('pages/fr.php'); }
+elseif ($language == 'vi') { include('pages/vi.php'); }
 elseif ($page == 'index') { include('pages/en.php'); }
 else { include('pages/error.php'); }
 
