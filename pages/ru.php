@@ -137,7 +137,7 @@
 			</table>
 			<div class="divider"></div><div id="imageCell"></div><br>
 			<center>
-				<a class="orange waves-effect waves-light btn tooltipped" data-position="top" data-delay="50" data-tooltip="Замерить задержку до серверов" type="submit" id="pingbutton" onclick="Materialize.toast('Проверяем задержку!', 3500)">Пинговать</a>
+				<a class="orange waves-effect waves-light btn tooltipped pulse" data-position="top" data-delay="50" data-tooltip="Замерить задержку до серверов" type="submit" id="pingbutton" onclick="Materialize.toast('Проверяем задержку!', 3500)">Пинговать</a>
 				<a class="orange waves-effect waves-light btn tooltipped" href="#modalinfo" data-position="top" data-delay="50" data-tooltip="Прочитать справку">Помощь</a>
 				<a class="orange waves-effect waves-light btn tooltipped" href="#modalservers" data-position="top" data-delay="50" data-tooltip="Всех серверов AWS">Список</a>
 				<a class='dropdown-button orange waves-effect waves-light btn tooltipped' data-position="top" data-delay="50" data-tooltip="Изменить язык сайта" href='#' data-activates='langdropdown'>Язык</a>
@@ -151,6 +151,8 @@
 				<li><a href="/ru">Русский</a></li>
 				<li class="divider"></li>
 				<li><a href="/es">Español</a></li>
+				<li class="divider"></li>
+				<li><a href="/fr">Français</a></li>
 			</ul>
 			
 			<div id="modalinfo" class="modal modal-fixed-footer">
@@ -174,6 +176,7 @@
 					<p><b>Для кого это?</b> - Для игроков этой игры, Банды и работяг <i><3</i></p>
 					<p><b>Как связаться с автором?</b> - Все нужные ссылки вы можете найти на основном сайте: <a href="http://disquse.ru">disquse.ru</a></p>
 					<p><b>Thanks to:</b><br><a href="https://github.com/nino6454">nino6454</a> for Spanish translation</p>
+					<p><a href="https://github.com/Cethiel">Cethiel</a> for French translation</p>
 				</div>
 				<div class="modal-footer">
 					<a class="modal-action modal-close waves-effect waves-orange btn-flat">Закрыть</a>

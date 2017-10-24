@@ -36,6 +36,7 @@ elseif ($language == 'en') { include('pages/en.php'); }
 elseif ($language == 'vi') { include('pages/vi.php'); }
 elseif ($language == 'ru') { include('pages/ru.php'); }
 elseif ($language == 'es') { include('pages/es.php'); }
+elseif ($language == 'fr') { include('pages/fr.php'); }
 elseif ($page == 'index') { include('pages/en.php'); }
 else { include('pages/error.php'); }
 
@@ -97,6 +98,7 @@ function head() {
 				line-height: 28px;
 				padding: 0 1.5rem;
 				font-size: 14px;
+				text-align: center;
 			}
 		</style>
 		<script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter44581822 = new Ya.Metrika2({ id:44581822, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/tag.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks2"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/44581822" style="position:absolute; left:-9999px;" alt="" /></div></noscript>

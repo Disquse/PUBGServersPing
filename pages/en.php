@@ -136,7 +136,7 @@
 			</table>
 			<div class="divider"></div><div id="imageCell"></div><br>
 			<center>
-				<a class="orange waves-effect waves-light btn tooltipped" data-position="top" data-delay="50" data-tooltip="Measure your ping" type="submit" id="pingbutton" onclick="Materialize.toast('Checking your ping!', 3500)">Ping</a>
+				<a class="orange waves-effect waves-light btn tooltipped pulse" data-position="top" data-delay="50" data-tooltip="Measure your ping" type="submit" id="pingbutton" onclick="Materialize.toast('Checking your ping!', 3500)">Ping</a>
 				<a class="orange waves-effect waves-light btn tooltipped" href="#modalinfo" data-position="top" data-delay="50" data-tooltip="Read F.A.Q.">Help</a>
 				<a class="orange waves-effect waves-light btn tooltipped" href="#modalservers" data-position="top" data-delay="50" data-tooltip="List of all AWS servers">List</a>
 				<a class='dropdown-button orange waves-effect waves-light btn tooltipped' data-position="top" data-delay="50" data-tooltip="Change language" href='#' data-activates='langdropdown'>Language</a>
@@ -150,6 +150,8 @@
 				<li><a href="/ru">Русский</a></li>
 				<li class="divider"></li>
 				<li><a href="/es">Español</a></li>
+				<li class="divider"></li>
+				<li><a href="/fr">Français</a></li>
 			</ul>
   
 			<div id="modalinfo" class="modal modal-fixed-footer">
@@ -172,6 +174,7 @@
 					<p><b>Who is this for?</b> - For PUBG players, Banda and rabotyag <i><3</i></p>
 					<p><b>How to contact you?</b> - You can check in on my main site: <a href="http://disquse.ru">disquse.ru</a></p>
 					<p><b>Thanks to:</b><br><a href="https://github.com/nino6454">nino6454</a> for Spanish translation</p>
+					<p><a href="https://github.com/Cethiel">Cethiel</a> for French translation</p>
 				</div>
 				<div class="modal-footer">
 					<a class="modal-action modal-close waves-effect waves-orange btn-flat">Close</a>
