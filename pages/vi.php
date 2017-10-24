@@ -136,10 +136,10 @@
                 </table>
                 <div class="divider"></div><div id="imageCell"></div><br>
                 <center>
-                    <a class="orange waves-effect waves-light btn tooltipped pulse" data-position="top" data-delay="50" data-tooltip="Measure your ping" type="submit" id="pingbutton" onclick="Materialize.toast('Checking your ping!', 3500)">Ping</a>
-                    <a class="orange waves-effect waves-light btn tooltipped" href="#modalinfo" data-position="top" data-delay="50" data-tooltip="Read F.A.Q.">Trợ giúp</a>
-                    <a class="orange waves-effect waves-light btn tooltipped" href="#modalservers" data-position="top" data-delay="50" data-tooltip="List of all AWS servers">Danh sách</a>
-                    <a class='dropdown-button orange waves-effect waves-light btn tooltipped' data-position="top" data-delay="50" data-tooltip="Change language" href='#' data-activates='langdropdown'>Ngôn ngữ</a>
+                    <a class="orange waves-effect waves-light btn tooltipped pulse" data-position="top" data-delay="50" data-tooltip="Đo ping của bạn" type="submit" id="pingbutton" onclick="Materialize.toast('Checking your ping!', 3500)">Ping</a>
+                    <a class="orange waves-effect waves-light btn tooltipped" href="#modalinfo" data-position="top" data-delay="50" data-tooltip="Đọc F.A.Q.">Trợ giúp</a>
+                    <a class="orange waves-effect waves-light btn tooltipped" href="#modalservers" data-position="top" data-delay="50" data-tooltip="Danh sách tất cả máy chủ AWS">Danh sách</a>
+                    <a class='dropdown-button orange waves-effect waves-light btn tooltipped' data-position="top" data-delay="50" data-tooltip="Đổi ngôn ngữ" href='#' data-activates='langdropdown'>Ngôn ngữ</a>
                 </center>
 
                 <ul id='langdropdown' class='dropdown-content'>
@@ -164,15 +164,15 @@
                                 <textarea id="feedbackarea" class="materialize-textarea" length="500"></textarea>
                                 <label style="top: 4px; left: 16px" for="feedbackarea">Text...</label>
                             </div>
-                            <div class="col s3"><a onclick="sendfeedback();" style="height: 100px; padding-top: 23%;" class="waves-effect waves-orange btn-flat">Отправить</a></div>
+                            <div class="col s3"><a onclick="sendfeedback();" style="height: 100px; padding-top: 23%;" class="waves-effect waves-orange btn-flat">Gửi</a></div>
                         </div>
-                        <p><b>Sources</b> - Bạn có thể xem nguồn của trang web trên github <a href="https://github.com/Disquse/PUBGServersPing">GitHub</a>. trước khi sử dụng, đọc giấy phép! Tự do đóng góp, báo cáo các vấn đề gặp phải!</p>
+                        <p><b>Nguồn</b> - Bạn có thể xem nguồn của trang web trên github <a href="https://github.com/Disquse/PUBGServersPing">GitHub</a>. trước khi sử dụng, đọc giấy phép! Tự do đóng góp, báo cáo các vấn đề gặp phải!</p>
                         <p><b>Tôi có ping tốt, nhưng tôi vẫn bị lag</b> - Máy chủ game bị quá tải, đó là lý do tại sao bạn bị lag. Bạn có thể thử chơi trên các máy chủ khác. Vấn đề ping lớn nhỏ hơn nhiều vấn để quá tải máy chủ. Không may là hiện tại chúng tôi chưa thể kiểm tra tình trạng quá tải của máy chủ....</p>
-                        <p><b>Why?</b> - Rất khó để kiểm tra ping của bạn đến các máy chủ PUBG. Bạn không thể kiểm tra nó trực tiếp ở trong game.</p>
-                        <p><b>How this works?</b> - Trang web này sẽ gửi yêu cầu http tới máy chủ của AWS mà PUBG đang sử dụng. Đây là yêu cầu từ máy tính của bạn, nên ping là chính xác.</p>
-                        <p><b>Sorting?</b> - Nhấn vào tiêu đề cột để sắp xếp. Sử dụng sau khi bạn đã kiểm tra ping.</p>
-                        <p><b>Who is this for?</b> - Cho người chơi PUBG, Banda và rabotyag <i><3</i></p>
-                        <p><b>How to contact you?</b> - Bạn có thể đăng nhập vào website chính thức của tôi: <a href="http://disquse.ru">disquse.ru</a></p>
+                        <p><b>Tại sao?</b> - Rất khó để kiểm tra ping của bạn đến các máy chủ PUBG. Bạn không thể kiểm tra nó trực tiếp ở trong game.</p>
+                        <p><b>Nó làm việc thế nào?</b> - Trang web này sẽ gửi yêu cầu http tới máy chủ của AWS mà PUBG đang sử dụng. Đây là yêu cầu từ máy tính của bạn, nên ping là chính xác.</p>
+                        <p><b>Sắp xếp?</b> - Nhấn vào tiêu đề cột để sắp xếp. Sử dụng sau khi bạn đã kiểm tra ping.</p>
+                        <p><b>Cái này cho ai?</b> - Cho người chơi PUBG, Banda và rabotyag <i><3</i></p>
+                        <p><b>Làm sao để liên hệ?</b> - Bạn có thể đăng nhập vào website chính thức của tôi: <a href="http://disquse.ru">disquse.ru</a></p>
                         <p><b>Cảm ơn tới:</b><br><a href="https://github.com/nino6454">nino6454</a> cho bản dịch Spanish</p>
                         <p><a href="https://github.com/Cethiel">Cethiel</a> cho bản dịch French</p>
                         <p><a href="https://github.com/ngocnh">NgocNH</a> cho bản dịch Vietnamesse</p>
