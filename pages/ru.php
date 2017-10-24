@@ -177,6 +177,7 @@
 					<p><b>Как связаться с автором?</b> - Все нужные ссылки вы можете найти на основном сайте: <a href="http://disquse.ru">disquse.ru</a></p>
 					<p><b>Thanks to:</b><br><a href="https://github.com/nino6454">nino6454</a> for Spanish translation</p>
 					<p><a href="https://github.com/Cethiel">Cethiel</a> for French translation</p>
+					<p><a href="https://github.com/ngocnh">NgocNH</a> for Vietnamese translation</p>
 				</div>
 				<div class="modal-footer">
 					<a class="modal-action modal-close waves-effect waves-orange btn-flat">Закрыть</a>

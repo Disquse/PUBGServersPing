@@ -175,6 +175,7 @@
 					<p><b>Como te contacto?</b> - Puedes chequear en mi sitio principal: <a href="http://disquse.ru">disquse.ru</a></p>
 					<p><b>Thanks to:</b><br><a href="https://github.com/nino6454">nino6454</a> for Spanish translation</p>
 					<p><a href="https://github.com/Cethiel">Cethiel</a> for French translation</p>
+					<p><a href="https://github.com/ngocnh">NgocNH</a> for Vietnamese translation</p>
 				</div>
 				<div class="modal-footer">
 					<a class="modal-action modal-close waves-effect waves-orange btn-flat">Close</a>
