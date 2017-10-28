@@ -36,6 +36,7 @@ elseif ($language == 'en') { include('pages/en.php'); }
 elseif ($language == 'ru') { include('pages/ru.php'); }
 elseif ($language == 'es') { include('pages/es.php'); }
 elseif ($language == 'fr') { include('pages/fr.php'); }
+elseif ($language == 'vi') { include('pages/vi.php'); }
 elseif ($page == 'index') { include('pages/en.php'); }
 else { include('pages/error.php'); }
 

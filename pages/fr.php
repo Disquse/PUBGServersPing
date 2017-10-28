@@ -150,6 +150,8 @@
 				<li><a href="/es">Español</a></li>
 				<li class="divider"></li>
 				<li><a href="/fr">Français</a></li>
+                <li class="divider"></li>
+                <li><a href="/vi">Vietnamese</a></li>
 			</ul>
 			<div id="modalinfo" class="modal modal-fixed-footer">
 				<div class="modal-content">
@@ -172,6 +174,7 @@
 					<p><b>Comment me contacter</b> - Vous pouvez vous enregistrer sur mon site principal: <a href="http://disquse.ru">disquse.ru</a></p>
 					<p><b>Thanks to:</b><br><a href="https://github.com/nino6454">nino6454</a> for Spanish translation</p>
 					<p><a href="https://github.com/Cethiel">Cethiel</a> for French translation</p>
+					<p><a href="https://github.com/ngocnh">NgocNH</a> for Vietnamese translation</p>
 				</div>
 				<div class="modal-footer">
 					<a class="modal-action modal-close waves-effect waves-orange btn-flat">Fermer</a>
