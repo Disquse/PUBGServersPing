@@ -150,6 +150,8 @@
 				<li><a href="/es">Español</a></li>
 				<li class="divider"></li>
 				<li><a href="/fr">Français</a></li>
+                                <li class="divider"></li>
+                                <li><a href="/cn">中文</a></li>
                 <li class="divider"></li>
                 <li><a href="/vi">Vietnamese</a></li>
 			</ul>
