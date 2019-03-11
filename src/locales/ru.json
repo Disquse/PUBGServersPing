@@ -1,0 +1,12 @@
+{
+  "locale-name": "Русский",
+  "locale-author": "Disquse",
+  "public-message": "Добро пожаловать! Мы обновили этот сайт, если вам нужна какая-то новая функция, дайте нам знать в секции issues на <a href='http://github.com/disquse/pubgserverping'>GitHub</a>!",
+  "ping-button": "Пинговать",
+  "about-button": "О сайте",
+  "clear-button": "Очистить все",
+  "locale-button": "Язык",
+  "close-button": "Закрыть",
+  "no-selected-servers": "Выберите хотя бы 1 сервер",
+  "something-is-broken": "Упс, похоже кто-то что-то сломал :( Попробуйте позже!"
+}

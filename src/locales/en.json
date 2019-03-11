@@ -1,0 +1,13 @@
+{
+  "locale-name": "English",
+  "locale-author": "Disquse",
+  "header-title": "PUBG SERVERS PING",
+  "public-message": "Welcome! We refactored this website, if you miss some feature, please let us know at <a href='http://github.com/disquse/pubgserverping'>GitHub</a> issues section!",
+  "ping-button": "Ping",
+  "about-button": "About",
+  "clear-button": "Clear all",
+  "locale-button": "Language",
+  "close-button": "Close",
+  "no-selected-servers": "You need to select at least 1 server!",
+  "something-is-broken": "Oops, looks like someone broke something :( Try again later!"
+}

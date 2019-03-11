@@ -1,0 +1,28 @@
+{
+  "name": "pubg-ping",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "vue": "^2.6.8",
+    "vue-class-component": "^7.0.1",
+    "vue-i18n": "^8.0.0",
+    "vue-property-decorator": "^8.0.0",
+    "vuetify": "^1.5.5"
+  },
+  "devDependencies": {
+    "@types/webpack": "^4.4.25",
+    "@vue/cli-plugin-babel": "^3.4.0",
+    "@vue/cli-plugin-typescript": "^3.4.0",
+    "@vue/cli-service": "^3.4.0",
+    "typescript": "^3.0.0",
+    "vue-cli-plugin-i18n": "^0.5.2",
+    "vue-template-compiler": "^2.6.8"
+  }
+}
