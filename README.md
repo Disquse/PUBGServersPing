@@ -1,4 +1,2 @@
-**PLAYERUNKNOWN'S BATTLEGROUNDS SERVERS PING**
----
-Feel free to contribute, create issues and other!
-http://pubg.disquse.ru
+**This branch is hardly outdated and deprecated!**
+Please switch to [master](http://github.com/disquse/pubgserversping) branch.
