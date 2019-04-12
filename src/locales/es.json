@@ -1,7 +1,12 @@
 {
   "locale-name": "Español",
-  "locale-author": " nino6454",
-  "about-button": "Ayuda",
-  "clear-button": "Borrar todo",
-  "close-button": "Cerrar"
+  "locale-author": "nino6454, Rnksts",
+  "public-message": "¡Bienvenido! Refactorizamos este sitio web, si extrañas alguna característica por favor háznoslo saber en la seccion de problemas (Issues) de <a href='http://github.com/disquse/pubgserversping'>GitHub</a>.",
+  "ping-button": "Ping",
+  "about-button": "Acerca de",
+  "clear-button": "Limpiar todo",
+  "locale-button": "Lenguaje",
+  "close-button": "Cerrar",
+  "no-selected-servers": "¡Tienes que seleccionar al menos 1 servidor!",
+  "something-is-broken": "Ups, parece que alguien rompió algo :( ¡Intenta de nuevo mas tarde!"
 }
