@@ -15,7 +15,7 @@
       "webpack-env",
       "webpack",
       "webpack-env",
-      "vuetify",
+      "vuetify"
     ],
     "paths": {
       "*": ["types/*"],
@@ -35,7 +35,7 @@
     "src/**/*.tsx",
     "src/**/*.vue",
     "tests/**/*.ts",
-    "tests/**/*.tsx",
+    "tests/**/*.tsx"
   ],
   "exclude": [
     "node_modules"
