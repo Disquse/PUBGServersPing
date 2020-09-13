@@ -1,0 +1,13 @@
+{
+  "locale-name": "Türkçe",
+  "locale-author": "ozgurg",
+  "header-title": "PUBG SUNUCU PINGLERİ",
+  "public-message": "Hoş geldiniz! Websitesini yeniledik, eksik özellikleri lütfen <a href='http://github.com/disquse/pubgserversping'>GitHub</a> issues bölümünden bize bildirin!",
+  "ping-button": "Ping",
+  "about-button": "Hakkında",
+  "clear-button": "Tümünü temizle",
+  "locale-button": "Dil",
+  "close-button": "Kapat",
+  "no-selected-servers": "En az 1 sunucu seçmeniz gerekiyor!",
+  "something-is-broken": "Oops, birisi bir şeyi bozmuş gibi görünüyor :( Daha sonra tekrar deneyin!"
+}
