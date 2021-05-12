@@ -35,37 +35,7 @@
         <v-divider class="dialog-divider"></v-divider>
 
         <v-card-text>
-          <h3>Contributions</h3>
-          This website is open sourced under MIT license. Check this <a href="https://github.com/disquse/pubgserversping">GitHub</a> repository.
-          We would like to merge your improvments. Also you can add your own translation for the website. Checkout <i>./src/locales</i> folder.
-          <br/><br/>
-
-          <h3>I experiencing lags, but my ping is fine!</h3>
-          Main problem of the PUBG is not a ping. There's alot reasons why you can have such problems. And there's no way to tell why for sure.
-          <br/><br/>
-
-          <h3>Why this website exist?</h3>
-          There's no way to check your ping directly in-game. And some people are actually finding this information helpful. Why not then?
-          <br/><br/>
-
-          <h3>How accurate are the measurements?</h3>
-          Some time after the first website release, PUBG gameservers was moved to the other locations. Our website is using outdated data for some regions.
-          However, in 99% cases your measurements would be quite the same, if there's no issues between you and gameservers network bridge.
-          There's still no any public list of PUBG gameservers IPv4 addresses, we would like to give you as accurate info as we can. But currently it's not possible.
-          <br/><br/>
-
-          <h3>How I can suggest a feature or report bug?</h3>
-          Use our public <a href="https://github.com/disquse/pubgserversping">GitHub</a> repository for such things.
-          <br/><br/>
-
-          <h3>How to contact you?</h3>
-          If it's related to the project, feel free to create an issue in out <a href="https://github.com/disquse/pubgserversping">GitHub</a> repository.
-          If you want to talk privately, add me in Discord: <i>Disquse#1429</i>
-          <br/><br/>
-
-          <h3>Thanks to:</h3>
-          - <b><a href="http://twitch.tv/beastqt">BeastQT</a></b> and <b><a href="http://twitch.tv/asmadey">Asmadey</a></b> for motivating to create this project.
-          <br/>
+          <About/>
 
           <span v-for="locale in locales" :key="locale">
             <a v-if="locale != 'en'">
@@ -181,8 +151,9 @@
 </template>
 
 <script lang="ts">
+import About from './About.vue';
 import { Component, Vue } from 'vue-property-decorator';
-import { servers, IServerData, ServerRegions} from '../configs/servers';
+import { servers, IServerData } from '../configs/servers';
 import { setTimeout, setInterval } from 'timers';
 
 export interface IServerResults {
@@ -198,7 +169,11 @@ export interface ITableHeader {
   value: string;
 }
 
-@Component({})
+@Component({
+  components: {
+    About
+  },
+})
 export default class Container extends Vue {
 
   // TODO: sorting
